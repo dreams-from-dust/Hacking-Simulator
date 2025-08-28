@@ -17,9 +17,6 @@ A JavaScript-based web application that simulates a terminal-style hacking proce
 * CSS3
 * JavaScript
 
-### Live Demo
-
-You can view a live demonstration of this project here: [https://dreams-from-dust.github.io/Hacking-Simulator/](https://dreams-from-dust.github.io/Hacking-Simulator/)
 ### Getting Started
 
 Simply clone this repository to your local machine and open the `index.html` file in your web browser to view the project.
