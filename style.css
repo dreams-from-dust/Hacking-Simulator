@@ -1,58 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Poppins:wght@300;400;700&display=swap');
 
-        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Poppins:wght@300;400;700&display=swap');
+body {
+    background-color: #000;
+    color: #0F0;
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    transition: background-color 0.1s ease-in-out;
+}
 
-        body {
-            background-color: #000;
-            color: #0F0;
-            font-family: 'Martel Sans', sans-serif;
-            font-size: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
-            transition: background-color 0.1s ease-in-out;
-        }
+#heading {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 
-        #heading {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
+.message-box {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px #0F0;
+    animation: fadeIn 0.5s ease-in-out;
+}
 
-        .message-box {
-            /* border: 2px solid #0F0; */
-            padding: 20px;
-            text-align: center;
-            width: 100%;
-            max-width: 600px;
-            box-shadow: 0 0 10px #0F0;
-            animation: fadeIn 0.5s ease-in-out;
-        }
+.final-message {
+    color: #F00;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0 0 15px #F00;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
 
-        .final-message {
-            color: #F00;
-            font-size: 3em;
-            font-weight: bold;
-            text-shadow: 0 0 15px #F00;
-            border: none;
-            padding: 0;
-            box-shadow: none;
-        }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
+@keyframes flash {
+    0% {
+        background-color: #000;
+    }
+    50% {
+        background-color: #500;
+    }
+    100% {
+        background-color: #000;
+    }
+}
 
-        @keyframes flash {
-            0% { background-color: #000; }
-            50% { background-color: #500; }
-            100% { background-color: #000; }
-        }
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    #heading {
+        font-size: 1.5em;
+        margin: 10px;
+    }
+
+    .message-box {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .final-message {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    #heading {
+        font-size: 1.2em;
+    }
+
+    .message-box {
+        padding: 10px;
+        width: 95%;
+    }
+
+    .final-message {
+        font-size: 1.5em;
+    }
+}
