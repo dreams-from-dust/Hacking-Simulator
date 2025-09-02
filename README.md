@@ -17,6 +17,9 @@ A JavaScript-based web application that simulates a terminal-style hacking proce
 * CSS3
 * JavaScript
 
+### Demo Video
+Watch the demo here: [Demo Video](demo-video.mp4)
+
 ### Getting Started
 
 Simply clone this repository to your local machine and open the `index.html` file in your web browser to view the project.
